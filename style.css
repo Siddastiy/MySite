@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background: #992d2d;
+    background: #111;
     color: white;
     padding: 20px;
     text-align: center;
@@ -25,4 +25,17 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+.dark-theme {
+    background: #222;
+    color: #eee;
+}
+
+.dark-theme header{
+    background: #111;
+}
+
+.dark-theme footer{
+    background: #000;
 }
