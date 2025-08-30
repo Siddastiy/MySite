@@ -8,13 +8,26 @@ body {
 header {
     background: #111;
     color: white;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
+    position: fixed;
+    width: 100%;
 }
 
 main {
-    padding: 250px;
+    padding: 200px;
     text-align: center;
+}
+
+ol, ul {
+    list-style-position: inside;
+    text-align: center;
+}
+
+#secret {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
 
 footer {
@@ -22,9 +35,8 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
     width: 100%;
-    bottom: 0;
+    bottom: 100%;
 }
 
 .dark-theme {
@@ -38,4 +50,20 @@ footer {
 
 .dark-theme footer{
     background: #000;
+}
+
+.popup {
+    color: black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: none;
+    z-index: 9999;
+    padding: 15px 20px;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+}
+
+.show-text {
+    display: block;
 }
