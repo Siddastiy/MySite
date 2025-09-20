@@ -10,13 +10,13 @@ header {
     color: white;
     padding: 10px;
     text-align: center;
-    position: fixed;
-    width: 100%;
+
 }
 
 main {
-    padding: 200px;
+    padding: 50px;
     text-align: center;
+    position: relative;
 }
 
 ol, ul {
@@ -24,10 +24,12 @@ ol, ul {
     text-align: center;
 }
 
-#secret {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
+
+
+#secret { 
+    position:absolute;
+    right: 0;
+    bottom: 0;
 }
 
 footer {
@@ -35,8 +37,8 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    width: 100%;
-    bottom: 100%;
+
+
 }
 
 .dark-theme {
