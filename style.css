@@ -6,6 +6,11 @@ html, body {
     position: relative;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     background: #111;
     color: white;
@@ -17,6 +22,7 @@ header {
 main {
     text-align: center;
     position: relative;
+    flex: 1;
 }
 
 ol, ul {
@@ -37,6 +43,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+    margin-top: auto;
 }
 
 .dark-theme {
@@ -66,5 +73,4 @@ footer {
 
 .show-text {
     display: block;
-
 }
