@@ -46,6 +46,7 @@ footer {
     text-align: center;
     padding: 10px;
     margin-top: auto;
+    padding-bottom: env(safe-area-inset-bottom); 
 }
 
 .dark-theme {
@@ -77,4 +78,5 @@ footer {
     display: block;
 
 }
+
 
