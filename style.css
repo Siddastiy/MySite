@@ -40,6 +40,7 @@ ol, ul {
 }
 
 footer {
+    margin: 0;
     background: #222;
     color: white;
     text-align: center;
@@ -76,3 +77,4 @@ footer {
     display: block;
 
 }
+
