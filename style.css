@@ -63,6 +63,10 @@ footer {
     display: block;
 }
 
+#timer {
+    color: #fff;
+}
+
 #snow-container {
     position: fixed;
     top: 0;
@@ -87,5 +91,4 @@ footer {
     to {
         transform: translateY(100vh);
     }
-
 }
