@@ -9,8 +9,8 @@ function playSound() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    const startDate = new Date(new Date().getFullYear(), 9, 15, 20, 0);
-    const endDate = new Date(new Date().getFullYear(), 9, 15, 21, 0);
+    const startDate = new Date(new Date().getFullYear(), 0, 1, 0, 0);
+    const endDate = new Date(new Date().getFullYear(), 0, 1, 1, 0);
     const today = new Date();
 
     if (today >= startDate && today <= endDate) {
