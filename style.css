@@ -4,12 +4,13 @@ html, body {
     background: #222;
     color: #fff;
     position: relative;
+    overflow-x: hidden; 
 }
 
 body {
     display: flex;
     flex-direction: column;
-
+    min-height: 100vh;
 }
 
 header {
@@ -17,26 +18,31 @@ header {
     color: white;
     padding: 10px;
     text-align: center;
-
 }
 
 main {
     text-align: center;
     position: relative;
     flex: 1;
+    padding: 10px;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 ol, ul {
-    list-style-position: inside;
-    text-align: center;
+    display: inline-block;
+    text-align: left;
+    padding-left: 20px;
 }
 
-
-
 #secret { 
-    position:absolute;
-    right: 0;
-    bottom: 0;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
 }
 
 footer {
@@ -47,23 +53,38 @@ footer {
     margin-top: auto;
 }
 
-#gnome {
+.gnome-wrapper {
+    position: relative;
     height: 100px;
+    width: 100%;
+    overflow: visible;
+}
+
+#gnome {
+    height: 80px;
     position: absolute;
-    left: -25px;
+    left: -15px;
     transform: rotate(45deg);
+    cursor: pointer;
 }
 
 .popup {
     color: black;
+    background: white;
+    border-radius: 10px;
     position: fixed;
     top: 50%;
     left: 50%;
     display: none;
     z-index: 9999;
-    padding: 15px 20px;
+    padding: 20px;
     transform: translate(-50%, -50%);
-    font-size: 100px;
+    
+    font-size: clamp(20px, 5vw, 40px); 
+    
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 .show-text {
@@ -72,6 +93,9 @@ footer {
 
 #timer {
     color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
 }
 
 #snow-container {

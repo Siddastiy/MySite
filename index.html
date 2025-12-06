@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт, мой</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,7 +16,7 @@
         <h1>Потом еще че то добавлю</h1>
         <br>
         <h1>До Нового года осталось:</h1>
-    <div id="timer"></div>
+        <div id="timer"></div>
 
     <script>
     function updateTimer() {
@@ -43,7 +44,9 @@
     updateTimer();
     setInterval(updateTimer, 1000);
     </script>
-        <img src="https://content.imageresizer.com/images/memes/Gnome-meme-5.jpg" alt="gnome" id="gnome" onclick="window.location.href='gnome.html'">
+        <div class="gnome-wrapper">
+             <img src="https://content.imageresizer.com/images/memes/Gnome-meme-5.jpg" alt="gnome" id="gnome" onclick="window.location.href='gnome.html'">
+        </div>
         <br>
         <br>
         <br>
