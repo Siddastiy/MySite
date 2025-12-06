@@ -47,6 +47,13 @@ footer {
     margin-top: auto;
 }
 
+#gnome {
+    height: 100px;
+    position: absolute;
+    left: -25px;
+    transform: rotate(45deg);
+}
+
 .popup {
     color: black;
     position: fixed;
